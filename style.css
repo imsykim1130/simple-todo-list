@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  background: #e3ecff;
+}
+
+.container {
+  margin: auto;
+  border: none;
+  border-radius: 1rem;
+  background: #ffffff;
+  padding: 2rem;
+  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.title-container {
+  margin-bottom: 1rem;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.title::before {
+  content: "📃";
+  margin-right: 0.2rem;
+}
+
+.count {
+  margin-left: 0.5rem;
+  color: #003ec5;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+ul {
+  height: 300px;
+  overflow: auto;
+  border-top: 1px dotted #adadad;
+  border-bottom: 1px dotted #adadad;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+ul::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 4px;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+li::before {
+  content: "📢";
+  padding-right: 0.3rem;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #adadad;
+}
+
+#input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  background: #eaeaea;
+  outline: none;
+  margin-right: 0.3rem;
+  padding: 0 0.7rem;
+  line-height: 30px;
+  font-size: 0.8rem;
+  letter-spacing: 0.025rem;
+}
+
+button {
+  padding: 0.3rem 0.8rem;
+  border: none;
+  color: #000000;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #003ec5;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 3px px rgba(0, 0, 0, 0.2);
+}
+
+#clear {
+  width: 100%;
+}
